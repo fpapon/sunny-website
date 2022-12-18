@@ -67,29 +67,25 @@ const config = {
           {
             type: 'doc',
             docId: 'intro',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/apache/sunny',
-            label: 'GitHub',
             position: 'right',
+            label: 'Documentation',
+          },
+          {to: '/blog', label: 'News', position: 'right'},
+          {
+            label: 'Download',
+            position: 'right',
+            to: 'download',
+          },
+          {
+            label: 'Project',
+            position: 'right',
+            to: 'project',
           },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
           {
             title: 'Community',
             items: [
@@ -116,15 +112,27 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Project',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Sources/Issue/CI/CD',
+                to: 'project',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/apache/sunny',
+                label: 'Mailing Lists',
+                to: 'mailing-lists',
+              },
+              { 
+                label: 'Team',
+                to: 'team',
+              },
+              {
+                label: 'Contribute',
+                to: 'contribute',
+              },
+              {
+                label: 'Support',
+                to: 'support',
               },
             ],
           },

@@ -25,13 +25,6 @@ export default function Home() {
       <main>
         <div className={clsx('container', styles.punchLine)}>
           <h1 className={clsx('margin-bottom--lg')}>{siteConfig.tagline}</h1>
-          <div className={styles.buttons}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/docs/intro">
-              Apache Sunny Tutorial - 5min ⏱️
-            </Link>
-           </div>
         </div>
         <HomepageFeatures />
       </main>

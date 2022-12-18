@@ -4,42 +4,39 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Lightning Fast',
+    icon: <img src="img/deadline.png" width="60px" />,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Sunny is very light and fast. The framework provides efficient and light IoC container.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Cloud applications colocation',
+    icon: <img src="img/anywhere.png" width="60px" />,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Sunny applications manager allows you to colocate cloud applications, optimizing cloud infrastructure cost.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Designed for the cloud and Kubernetes',
+    icon: <img src="img/cloud.png" width="60px" />,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Sunny is designed for the cloud, covering cloud ecosystem scope, from the applications runtime, up to deployment including Kubernetes packages manager.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({icon, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {icon}
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
