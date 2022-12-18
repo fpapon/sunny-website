@@ -2,46 +2,30 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Apache Sunny
 
-Let's discover **Apache Sunny in less than 5 minutes**.
+Apache Sunny is a Java stack allowing the implementation and distribution of cloud native Java software easily.
+It covers the full cloud native software lifecyle: implement, build including native support, package and distribute.
+Sunny focuses on Java stack to implement cloud applications and using de-facto standards in the Java and cloud worlds (Apache Maven, Kubernetes, GraalVM, ...).
 
-## Getting Started
+Sunny is a neutral and stable backbone to write out cloud software. Sunny is the Java cloud solution to go native efficiently and easily.
 
-Get started by **creating a new site**.
+Sunny is the full Java stack answering the following needs:
+* A light cloud friendly stack
+* A colocalization backbone
+* A set of cloud deployment helpers
+The goal is really to go fast and with a single reference project to the cloud.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Sunny, designed for the cloud
 
-### What you'll need
+Cloud applications introduced new challenges for developers and runtime:
+* Fast loading is important to optimize the "ready to serve" time but also the memory and CPU usage.
+* Resources efficient applications to reduce power consumption, and so cost, in a serverless friendly approach.
+* Immutable but flexible runtime, with optional dynamic loading.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Apache Sunny provides a full Java stack to address these challenges, making all team members happy with the deliveries (easy for developers, light for ops, common to monitor for ops and secops).
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Apache Sunny is composed by:
+* **Sunny Framework** is a light and fast IoC container, acting as service registry and beans loader.
+* **Sunny Applications Manager** is a runtime supporting applications colocalization, with seamless integration withint Kubernetes API (ConfigMap for configuration, Service Discovery based on Kubernetes coredns to easily discover and communicate between applications, ...).
+* **Sunny Kubernetes Deployer** is both a Kubernetes packages manager leveraging Apache Maven repositories to resolve dependencies and deploy artifacts. It's similar to Helm but for the Java ecosystem and without any requirement in terms of infrastructure/server. It also includes a Kubernetes Operator to easily manager and provision Sunny applications manager and K8S orchestrator for cluster management. 
