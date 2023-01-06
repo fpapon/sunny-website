@@ -2,4 +2,8 @@
 sidebar_position: 4
 ---
 
-# Kubernetes Packages Manager, Deployer, Orchestrator
+# Deployer
+
+## Kubernetes Packages Manager
+
+## Deployer & Orchestrator

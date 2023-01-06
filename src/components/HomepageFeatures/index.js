@@ -4,11 +4,11 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Lightning Fast',
+    title: 'Lightning Fast, Native minded',
     icon: <img src="img/deadline.png" width="60px" />,
     description: (
       <>
-        Sunny is very light and fast. The framework provides efficient and light IoC container.
+        Sunny is very light and fast. The framework provides efficient and light IoC container, GraalVM friendly.
       </>
     ),
   },
@@ -22,11 +22,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Designed for the cloud and Kubernetes',
+    title: 'Kube Native',
     icon: <img src="img/cloud.png" width="60px" />,
     description: (
       <>
-        Sunny is designed for the cloud, covering cloud ecosystem scope, from the applications runtime, up to deployment including Kubernetes packages manager.
+        Sunny is designed for Kubernetes, covering cloud ecosystem scope, from the applications runtime, up to deployment including Kubernetes packages manager.
       </>
     ),
   },
